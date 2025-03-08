@@ -6,17 +6,24 @@
     <title>Social Icons with Hover Animation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* Container for the icons */
         .social-icons {
             display: flex;
-            gap: 15px;
+            gap: 20px;
         }
+
+        /* Style for the individual icons */
         .social-icons a {
             font-size: 40px;
             color: #333;
-            transition: transform 0.3s ease;
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease;
         }
+
+        /* Hover effect */
         .social-icons a:hover {
             transform: scale(1.2);
+            color: #1e90ff; /* Blue color on hover, change this to whatever color you prefer */
         }
     </style>
 </head>
