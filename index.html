@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Icons with Hover Animation</title>
+    <style>
+        /* Animation hover */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons a {
+            font-size: 40px;
+            color: #333;
+            transition: transform 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenue sur le site de Social Icons ! 🎉</h1>
-    <p>Les icônes sociales avec animation hover devraient s'afficher ici.</p>
+    <h1>Bienvenue sur le site de Social Icons avec animation hover ! 🎉</h1>
+    
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
+        <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+        <a href="https://linkedin.com" target="_blank">🔗 LinkedIn</a>
+        <a href="https://instagram.com" target="_blank">📷 Instagram</a>
+    </div>
 </body>
 </html>
