@@ -11,21 +11,29 @@
     <meta property="og:image" content="https://www.example.com/your-image.jpg"> <!-- Replace with your actual image -->
     <title>Connect with ROSH Company™ - Social Media Links</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        // JavaScript to dynamically insert the current year
+        const currentYear = new Date().getFullYear();
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('current-year').textContent = currentYear;
+        });
+    </script>
     <style>
         /* Global Styling */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: none;
             color: #333;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: transparent;
+            color: #333;
             padding: 10px 0;
             text-align: center;
+            margin-bottom: 0;
         }
 
         h1 {
@@ -39,27 +47,26 @@
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 25px;
-            margin: 30px 0;
-            padding: 20px;
-            background-color: #fff;
+            gap: 10px;
+            flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+            margin: 0;
+            padding: 10px 0;
+            background-color: transparent;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         .social-icons a {
-            font-size: 40px;
+            font-size: 5vw; /* Responsive size based on viewport width */
             color: #555;
             text-decoration: none;
             transition: all 0.3s ease-in-out;
             padding: 10px;
             border-radius: 50%;
-            background-color: #f2f2f2;
+            background-color: transparent;
             display: inline-block;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* Hover Effects with Professional Colors */
         .social-icons a:hover {
             transform: scale(1.15);
             opacity: 0.8;
@@ -67,55 +74,43 @@
 
         .social-icons a.facebook:hover {
             color: #1877f2;
-            background-color: #e9f3fe;
         }
 
         .social-icons a.instagram:hover {
             color: #e4405f;
-            background-color: #fde8ec;
         }
 
         .social-icons a.whatsapp:hover {
             color: #25d366;
-            background-color: #e5f6e8;
         }
 
         .social-icons a.telegram:hover {
             color: #0088cc;
-            background-color: #e1f3f9;
         }
 
         .social-icons a.linkedin:hover {
             color: #0a66c2;
-            background-color: #e6f0f8;
         }
 
         .social-icons a.pinterest:hover {
             color: #e60023;
-            background-color: #fce7ed;
         }
 
         .social-icons a.twitter:hover {
             color: #1da1f2;
-            background-color: #e3f7fe;
         }
 
         .social-icons a.youtube:hover {
             color: #ff0000;
-            background-color: #ffe1e1;
-        }
-
-        .social-icons a.globe:hover {
-            color: #ff6600;
-            background-color: #fff0e6;
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
-            padding: 15px;
+            background-color: transparent;
+            color: #333;
+            padding: 10px 0;
             text-align: center;
             font-size: 14px;
+            margin-top: 0;
         }
 
         footer a {
@@ -130,11 +125,7 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>🌐 Connect with ROSH Company™</h1>
-    </header>
-
-    <section class="social-icons">
+  <section class="social-icons">
         <a href="https://www.whatsapp.com/channel/0029Va6VncMAYlUO28g4Re0Q" target="_blank" class="fab fa-whatsapp whatsapp" title="WhatsApp"></a>
         <a href="https://web.facebook.com/ROSHCompany" target="_blank" class="fab fa-facebook facebook" title="Facebook"></a>
         <a href="https://t.me/ROSHCompany" target="_blank" class="fab fa-telegram telegram" title="Telegram"></a>
@@ -144,11 +135,6 @@
         <a href="https://fr.pinterest.com/rosh_company/" target="_blank" class="fab fa-pinterest pinterest" title="Pinterest"></a>
         <a href="https://x.com/ROSHCompany" target="_blank" class="fab fa-twitter twitter" title="Twitter"></a>
         <a href="https://www.youtube.com/@rosh.company" target="_blank" class="fab fa-youtube youtube" title="YouTube"></a>
-        <a href="https://sites.google.com/view/roshcompany" target="_blank" class="fas fa-globe globe" title="Official Website"></a>
     </section>
-
-    <footer>
-        <p>✨ Empowering Your Digital Journey – <a href="https://sites.google.com/view/roshcompany" target="_blank">ROSH Company™</a> ✨</p>
-    </footer>
 </body>
 </html>
